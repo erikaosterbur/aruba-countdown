@@ -2,6 +2,7 @@ import Header from './components/Header';
 import CountdownOO from './components/CountdownOO';
 import CountdownESA from './components/CountdownESA';
 import CountdownSRS from './components/CountdownSRS';
+import Images from './components/Images';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <CountdownESA />
           <CountdownSRS />
       </div>
+      <Images />
     </div>
   );
 }
