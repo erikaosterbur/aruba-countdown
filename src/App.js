@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CountdownOO />
-      <CountdownESA />
-      <CountdownSRS />
+      <div className="row d-flex justify-content-center">
+          <CountdownOO />
+          <CountdownESA />
+          <CountdownSRS />
+      </div>
     </div>
   );
 }

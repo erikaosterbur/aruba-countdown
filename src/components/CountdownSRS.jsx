@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function CountdownSRS(){
     const calculateTimeLeft = () => {
-        const difference = +new Date(`02/04/2022`) - +new Date();
+        const difference = +new Date(`02/04/2022 16:55`) - +new Date();
         let timeLeft = {};
         if (difference > 0) {
             timeLeft = {
@@ -27,22 +27,22 @@ function CountdownSRS(){
           return;
         }
         timerComponents.push(
-          <span>
+          <div>
             {timeLeft[interval]} {interval}{" "}
-          </span>
+          </div>
         );
     });
     return(
-        <>
-          <div className="m-4">
-            <div className="d-flex justify-content-center" style={{backgroundColor:'var(--green-sheen', color: "white", fontSize:"40px"}}>
-                <h2>Russ, Sara, & Stella:</h2>
-            </div>            
-            <div className="d-flex justify-content-center" style={{backgroundColor:'var(--green-sheen', color: "white", fontSize:"40px"}}>
-                {timerComponents.length ? timerComponents : <span>are in Aruba! Hurray!</span>}
+      <>
+        <div className="col-10 col-lg-3">
+          <div className="m-4 d-flex justify-content-center" style={{backgroundColor:'var(--green-sheen', color: "white", fontSize:"1.75rem", padding: "5px"}}>
+            <div>
+              <h2>Russ, Sara, & Stella</h2>
+              {timerComponents.length ? timerComponents : <span>are in Aruba! Hurray!</span>}
             </div>
           </div>
-        </>
+        </div>
+      </>
     )
 }
 
