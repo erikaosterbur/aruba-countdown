@@ -1,0 +1,35 @@
+* {
+    font-family: 'Questrial', sans-serif;;
+}
+:root {
+    --coffee: #634938ff;
+    --midnight-green-eagle-green: #034052ff;
+    --steel-teal: #5C95A0ff;
+    --green-sheen: #7EA892ff;
+    --viridian-green: #2AA19Dff;
+    --antique-brass: #CE9678ff;         
+}
+body {background: url('./images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    color: white;
+    background-color: var(--midnight-green-eagle-green);
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+header h1 {
+    letter-spacing: .75rem;
+}
+@media screen and (max-width: 400px){
+    body {background: url('./images/background-mobile.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
